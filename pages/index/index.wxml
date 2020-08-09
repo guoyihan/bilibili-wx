@@ -1,0 +1,40 @@
+<view class="main">
+  <view class="topbar">
+    <view class="topbar-search">
+      <view class="search-box">
+        <image class="icon" src="../../images/搜索.png"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="category">
+      <view class="title hot-video">热门</view>
+      <view class="title fans-comic">追番</view>
+  </view>
+
+
+  <swiper class="swiper-content">
+    <swiper-item class="swiper-content-item left" item-id="0" style="background-color:red">
+      <view class="item" wx:for="{{videotext}}" wx:key="index" >
+        <image class="img" src="{{item.img}}"/>
+        <h3>{{item.title}}</h3>
+        <image class="avatar" src="" />
+        <span class="author">{{item.upName}}</span>
+        <image class="avatar" src="" />
+        <span class="count">{{item.watchCount}}</span>
+        <span>{{item.date}}</span> 
+      </view>
+    </swiper-item>
+
+    <swiper-item class="swiper-content-item right" item-id="1"> 
+      <indexFans></indexFans>
+    </swiper-item>
+  </swiper>
+
+
+</view>
+  
+
+
+
+  

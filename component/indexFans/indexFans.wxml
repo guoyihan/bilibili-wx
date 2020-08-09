@@ -1,0 +1,14 @@
+<!--component/indexFans/indexFans.wxml-->
+
+<view class="datelist">
+<view class="datelist-calendar">
+    <view class="dateitem" wx:for="{{weekText}}" wx:key="index">{{item}}</view>
+</view>
+<view class="datelist-show">
+    <view class="showitem" wx:for="{{comicdata}}" wx:key="index">
+    <image class="comicicon" src="{{item.img}}"/>
+    <span class="name">{{item.comicname}}</span>
+    <span class="state">{{item.ep}}</span>    
+    </view>
+</view>
+</view>

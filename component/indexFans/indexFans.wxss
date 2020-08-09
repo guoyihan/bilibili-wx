@@ -1,0 +1,49 @@
+/* component/indexFans/indexFans.wxss */
+.datelist {
+    width: 100%;
+    height: 400rpx;
+}
+.datelist-calendar{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding: 0 10rpx;
+}
+.datelist .datelist-calendar .dateitem {
+    flex: 1;
+    display: inline-block;
+    margin: 10rpx;
+    width: 50rpx;
+    text-align: center;
+}
+
+.datelist .datelist-show{
+    margin: 5rpx 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 13rpx;
+    border-bottom: 2rpx solid #eee;
+
+}
+.datelist .datelist-show .showitem{
+    width: 160rpx;
+    height: 250rpx;
+    margin: 0 12rpx 6rpx 12rpx;
+}
+.datelist .datelist-show .showitem .comicicon{
+    width: 100%;
+    height: 160rpx;
+}
+.datelist .datelist-show .showitem .name{
+    width: 100%;
+    font-size: 15px;
+
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+.datelist .datelist-show .showitem .state{
+    font-size: 10px;
+    color: #555;
+}

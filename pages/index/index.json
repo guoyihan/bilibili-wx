@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "indexFans": "../../component/indexFans/indexFans"
+  }
+}
